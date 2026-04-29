@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Nusantara</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+
+  <h2>🌍 Chareen Travel</h2>
+
+  <!-- NAV -->
+  <nav class="menu">
+    <a href="#beranda">Beranda</a>
+    <a href="#destinasi">Destinasi</a>
+    <a href="#booking">Booking</a>
+    <a href="#riwayatSec">Riwayat</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="user">
+    Nama : KARINA CAHYA NOVITA <br>
+    NIM : 2511483751
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+
+  <h1>Jelajahi Keindahan Indonesia Bersama Chareen Nusantara</h1>
+  <p>Temukan destinasi wisata terbaik dan pesan perjalananmu dengan mudah</p>
+
+  <div class="search-box">
+    <input id="search" placeholder="Cari destinasi...">
+    <span>🔍</span>
+  </div>
+
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- DESTINASI -->
+  <section id="destinasi">
+
+    <h2>📍 Destinasi Populer</h2>
+    <div class="grid" id="list"></div>
+
+  </section>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- BOOKING -->
+    <div class="box" id="booking">
+
+      <h3>📅 Form Booking</h3>
+
+      <input id="nama" placeholder="Nama">
+      <select id="destinasiSelect"></select>
+      <input id="orang" type="number" placeholder="Jumlah Orang">
+      <input id="tanggal" type="date">
+
+      <button onclick="booking()">Booking</button>
+
+    </div>
+
+    <!-- RIWAYAT -->
+    <div class="box" id="riwayatSec">
+
+      <h3>📋 Riwayat Booking</h3>
+      <div id="riwayat"></div>
+
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard">
+
+      <h3>📊 Dashboard Admin</h3>
+
+      <div class="dashboard-flex">
+
+        <div class="card-dash">
+          <p>Total Booking</p>
+          <h2 id="total">0</h2>
+        </div>
+
+        <div class="card-dash">
+          <p>Total Pendapatan</p>
+          <h2 id="uang">Rp 0</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- TENTANG -->
+<section id="tentang" class="tentang">
+
+  <h2>📖 Tentang</h2>
+
+  <div class="tentang-grid">
+
+    <div class="tentang-card">
+
+      <h3>🌍 Tentang Website</h3>
+
+      <p>
+        Chareen Travel adalah website travel sederhana yang membantu pengguna
+        menemukan berbagai destinasi wisata terbaik di Indonesia dengan tampilan
+        yang mudah digunakan.
+      </p>
+
+    </div>
+
+    <div class="tentang-card">
+
+      <h3>🎯 Tujuan</h3>
+
+      <p>
+        Memberikan kemudahan dalam melihat destinasi wisata serta melakukan
+        booking perjalanan secara cepat dan praktis.
+      </p>
+
+    </div>
+
+    <div class="tentang-card">
+
+      <h3>⚙️ Fitur Utama</h3>
+
+      <p>
+        Menampilkan destinasi populer, sistem booking otomatis,
+        riwayat pemesanan, serta dashboard total booking dan pendapatan.
+      </p>
+
+    </div>
+
+    <div class="tentang-card">
+
+      <h3>🚀 Pengembangan</h3>
+
+      <p>
+        Ke depannya website dapat dikembangkan dengan fitur login,
+        pembayaran online, dan integrasi peta lokasi wisata.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan" class="layanan">
+
+  <h2>🚐 Layanan Travel</h2>
+
+  <div class="layanan-grid">
+
+    <div class="layanan-card">
+
+      <h3>Travel Wisata</h3>
+
+      <p>
+        Menyediakan layanan perjalanan wisata ke berbagai destinasi populer
+        di Indonesia dengan kendaraan travel yang nyaman.
+      </p>
+
+    </div>
+
+    <div class="layanan-card">
+
+      <h3>Paket Liburan</h3>
+
+      <p>
+        Paket perjalanan lengkap mulai dari transportasi,
+        perjalanan wisata, hingga destinasi pilihan terbaik.
+      </p>
+
+    </div>
+
+    <div class="layanan-card">
+
+      <h3>Sewa Mobil Travel</h3>
+
+      <p>
+        Menyediakan kendaraan travel untuk perjalanan wisata
+        keluarga maupun rombongan dengan fasilitas terbaik.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="galeri">
+
+  <h2>📸 Galeri Destinasi</h2>
+
+  <div class="galeri-grid">
+
+    <img src="images/wisata gwk bali.jpg">
+    <img src="images/wisata lombok.jpg">
+    <img src="images/wisata raja ampat.jpg">
+    <img src="images/wisata bromo.jpg">
+    <img src="images/wisata yogyakarta.jpg">
+    <img src="images/wisata labuan bajo.jpg">
+    <img src="images/wisata bandung.jpg">
+    <img src="images/wisata jakarta.jpg">
+    <img src="images/wisata danau toba.jpg">
+    <img src="images/wisata surabaya.jpg">
+    <img src="images/wisata makassar.jpg">
+    <img src="images/wisata malang.jpg">
+
+  </div>
+
+</section>
+
+<!-- FOOTER / KONTAK -->
+<footer id="kontak" class="kontak">
+
+  <h2>📞 Kontak</h2>
+
+  <div class="kontak-card">
+
+    <p><b>Nama:</b> Karina Cahya Novita</p>
+    <p><b>Email:</b> karinacahya@gmail.com</p>
+    <p><b>No HP:</b> 0812-3456-7890</p>
+    <p><b>Alamat:</b> Indonesia</p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
